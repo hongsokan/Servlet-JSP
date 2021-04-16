@@ -11,13 +11,13 @@ public class QueryTest3Servlet extends HttpServlet {
 	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		resp.setContentType("text/html;charset=UTF-8");
 		PrintWriter out = resp.getWriter();
-		out.print("<html><head><title>Query ¹®ÀÚ¿­ Å×½ºÆ®</title></head>");
+		out.print("<html><head><title>Query ë¬¸ìì—´ í…ŒìŠ¤íŠ¸</title></head>");
 		out.print("<body>");
-		out.print("<h1>GET ¹æ½ÄÀ¸·Î ¿äÃ»µÇ¾ú½À´Ï´Ù</h1>");
+		out.print("<h1>GET ë°©ì‹ ìš”ì²­</h1>");
 
 		String name = req.getParameter("name");
 		System.out.println(name);
-		out.print("ÀÌ¸§ : " + name + "<br/>");
+		out.print("ì´ë¦„ : " + name + "<br/>");
 
 		out.println("</body></html>");
 		out.close();
@@ -27,13 +27,13 @@ public class QueryTest3Servlet extends HttpServlet {
 	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		resp.setContentType("text/html;charset=UTF-8");
 		PrintWriter out = resp.getWriter();
-		out.print("<html><head><title>Query ¹®ÀÚ¿­ Å×½ºÆ®</title></head>");
+		out.print("<html><head><title>Query ë¬¸ìì—´ í…ŒìŠ¤íŠ¸</title></head>");
 		out.print("<body>");
-		out.print("<h1>POST ¹æ½ÄÀ¸·Î ¿äÃ»µÇ¾ú½À´Ï´Ù</h1>");
+		out.print("<h1>POST ë°©ì‹ ìš”ì²­</h1>");
 
 		req.setCharacterEncoding("UTF-8");
 		String name = req.getParameter("name");
-		out.print("ÀÌ¸§ : " + name + "<br/>");
+		out.print("ì´ë¦„ : " + name + "<br/>");
 
 		out.println("</body></html>");
 		out.close();
